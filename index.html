@@ -59,6 +59,12 @@ h1{font-size:clamp(44px,7vw,86px);line-height:.96;letter-spacing:-.055em;margin:
 .workspaceIntro .eyebrow{color:#fca5a5;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
 .workspaceIntro h2{color:#fff;margin:0 0 10px}
 .workspaceIntro p{color:#d1d5db;max-width:920px;margin:0}
+.labsIntro{background:linear-gradient(135deg,#0b1224 0%, #111827 45%, #1e293b 100%);color:#fff;border-radius:36px;padding:48px 46px;margin-bottom:24px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.labsIntro:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;background:rgba(240,74,50,.18);right:-75px;top:-70px}
+.labsIntro .eyebrow{display:inline-flex;align-items:center;background:#f5f0ff;color:#f3a4a4;border:1px solid rgba(255,255,255,.18);padding:10px 16px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.labsIntro h2{color:#fff;font-size:clamp(42px,6vw,80px);line-height:.95;letter-spacing:-.055em;margin:0 0 18px;max-width:980px}
+.labsIntro p{color:#d1d5db;font-size:clamp(18px,2vw,22px);max-width:1150px;margin:0}
+@media(max-width:760px){.labsIntro{padding:30px 24px;border-radius:28px}.labsIntro .eyebrow{padding:9px 13px;font-size:11px;margin-bottom:14px}.labsIntro h2{font-size:clamp(34px,10vw,52px)}.labsIntro p{font-size:18px}}
 .foundationGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 24px}
 .foundationChip{border:1px solid var(--line);border-radius:16px;background:#fff;padding:14px;font-weight:800}
 .foundationChip span{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-top:5px}
@@ -351,8 +357,11 @@ Produce the Skill in the following format:
 
 <section class="section" id="labs">
   <div class="container">
-    <h2>The six labs</h2>
-    <p class="sectionIntro">Open each lab when you are ready. Your checklist progress is stored in this browser so you can continue during the day.</p>
+    <div class="labsIntro">
+      <div class="eyebrow">Core workshop experience · the six labs</div>
+      <h2>The Six Labs</h2>
+      <p>Move from productivity into leadership intelligence through six hands-on labs. Build practical tools, analyse evidence, challenge assumptions, redesign workflows, and apply AI to real university leadership tasks. Open each lab when you are ready. Your checklist progress is stored in this browser so you can continue during the day.</p>
+    </div>
 
     <article class="lab open">
       <div class="labHead" onclick="toggleLab(this)"><div class="num">1</div><div><h3>AI as Your Executive Assistant</h3><p>Build tools for managing work, then turn research into a Board-ready decision story.</p></div><div class="chev">⌄</div></div>
